@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-size: 1.1rem;
+}
+
+ /* NAVBAR SECTION  */
+
+ nav{
+    justify-content: space-between;
+    padding: 2rem 3rem;
+ }
+
+ nav,
+ .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+ }
+
+ .nav-items {
+    gap: 8.5rem;
+ }
+
+ .nav-items li a {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 700;
+ }
+
+
+ .primary-link {
+    background-color: #000000;
+    padding: 0.8rem  1.4rem;
+    border-radius: 30px;
+    width: fit-content;
+    transition: transform 0.6s ease;
+ }
+
+ .primary-link:hover {
+    transform: scale(1.05);
+ }
+
+ .primary-link a {
+    color: #ffff;
+ }
+
+/* Intro SECTION  */
+.intro {
+    background-color: #94f3ca7f;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.intro-content {
+    width: 44vw;
+}
+
+.intro-content h1 {
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+.intro-img {
+    width: 33vw;
+}
+
+.intro-img img {
+    width: 100%;
+    display: block;
+}
+
+.learn-link {
+    margin-top: 1.2rem;
+}
+
+.offers h2 {
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.service-img {
+    padding: 1.3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.img-box{
+    width: 16vw;
+    min-width: 150px;
+}
+
+.img-box img{
+    width: 100%;
+    display: block;
+}
+
+.abt {
+    padding: 2rem 3rem; 
+    margin-top: 1rem; 
+    display: flex;
+    gap: 4rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.164) 0%, rgba(255, 255, 255, 0.21) 25%, rgba(202, 249, 228, 0.178) 100%);
+}
+
+.abt-content {
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.abt-info {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.abt-content  img{
+    width: 100%;
+    display: block;
+}
+
+.em-container {
+   flex-direction: column;
+   align-items: center;
+   gap: 0.3rem;
+   border: 3px solid rgb(0, 162, 255);
+}
+
+.em-container h2 {
+    font-size: 1.6rem;
+}
+
+.em-container p{
+   color: rgb(143, 143, 143); 
+   font-size: 0.98rem;
+   font-weight: 400;
+   font-style: italic;
+}
+
+/* OUR SERVICES SECTION  */
+.services-container {
+    padding: 2rem 3rem; 
+}
+
+.services-container h2 {
+    text-align: center;
+}
+
+.services-cards {
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25vw;
+    /* border: 2px solid red; */
+    background-color: #ffffff;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 2rem; */
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    margin-top: 0.8rem;
+}
+
+.card-content p{
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        padding: 1.4rem 1.3rem;
+     }
+
+     .primary-link {
+        padding: 1rem  1.4rem;
+        width: 40%;
+        text-align: center;
+     }
+
+     .primary-link a {
+        font-size: 1.1rem;
+     }
+
+    .intro {
+        padding: 1.4rem 2.2rem;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .intro-img,
+    .intro-content{
+        width: 90vw;
+    }
+
+    .intro-content {
+       margin-top: 0.8rem;
+    }
+
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .service-img {
+        padding: 1.4rem 2.2rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .img-box{
+        width: 90vw;
+    }
+
+    .abt {
+        padding: 2rem 3rem; 
+        margin-top: 1rem; 
+        display: flex;
+        gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .abt-content,
+    .abt-info,
+    .card {
+        width: 90vw;
+    }
+
+    .abt-info  p{
+        font-size: 1.1rem;
+    }
+    
+    .em-container {
+        flex-direction: column;
+    }
+    .em-container p{
+       margin-top: -10px;
+     }
+     .services-container {
+        padding: 1.4rem 1.2rem;
+    }
+  }
