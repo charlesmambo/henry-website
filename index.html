@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DrHenryGinger</title>
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+
+    <meta name="keywords" content="natural skincare, herbal beauty products, organic beauty treatments, hair treatments, skin care, body shapers, cruelty-free beauty, full body shapers, piercing services">
+    <meta name="description" content="DrHenryGinger offers 100% natural beauty products and services to enhance your natural beauty. Discover organic hair treatments, skin solutions, full body shapers, and piercing services crafted with care.">
+    
+    <meta property="og:title" content="DrHenryGinger- Embrace Natural Beauty">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:site_name" content="DrHenryGinger">
+    <meta property="og:description" content="Explore DrHenryGinger's natural beauty solutions, from herbal skin and hair treatments to full body shapers and professional piercing services. Look and feel your best naturally.">
+    
+    <title>DrHenryGinger | Embrace Your Natural Beauty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
@@ -19,30 +30,43 @@
 
             <ul class="nav-items">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#reviews">Blog</a>
                 </li>
             </ul>
 
             <div class="primary-link nav-btn">
-                <a href="#">Contact</a>
+                <a href="#footer">Contact</a>
             </div>
+         <div class="drop-down-nav" id="drop-down-nav">
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+            <ul class="drop-down" id="drop-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Blog</a></li>
+                <li class="drop-btn-container">
+                    <a class="drop-btn" href="#footer">Contact</a>
+                </li>
+                <i class="fa-regular fa-circle-xmark" id="close-btn"></i>
+            </ul>
+        </div>
+
          </nav>
 
           <!-- Intro SECTION -->
         
         <header>
-         <div class="intro">
+         <div class="intro" id="intro">
             <div class="intro-content">
                 <h1>Discover the power of nature, and let your confidence radiate from within!</h1>
                 <p>Empowering Your Beauty Journey with Care and Expertise</p>
                 <div class="primary-link learn-link">
-                    <a href="#">Learn More</a>
+                    <a href="#products">Learn More</a>
                 </div>
             </div>
          </div>
@@ -101,7 +125,7 @@
 
 
         <!-- OUR SERVICES SECTION -->
-        <section class="abt-products  our-services">
+        <section class="abt-products  our-services" id="services">
          <div class="services-container">
             <h2>Our Services</h2>
 
@@ -135,15 +159,15 @@
                         <p>Our oils and pills naturally reduce fat, enhancing your curves. Achieve your desired look with ease, feeling confident and secure in your body.</p>
                     </div>
                 </div>
-                <div class="hidden-content">
-                <div class="card">
+                <div class="hidden-content" id="hidden-content">
+                <div class="card hide">
                     <img src="/assets/gyne.png" alt="">
                     <div class="card-content">
                         <h4>Gynecology Services</h4>
                         <p>Our intimate care services provide natural, herbal solutions for gynecological health, ensuring your comfort and well-being with every treatment.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card hide">
                     <img src="/assets/hairstyle.png" alt="">
                     <div class="card-content">
                         <h4>Hairstyling</h4>
@@ -155,12 +179,12 @@
          </div>
         
          <div class="see-all  mv-btn">
-            <a href="">See All</a>
+            <a href="" id="see-all-services">See All</a>
          </div>
 
         </section>
        
-       <section class="abt-products our-products">
+       <section class="abt-products our-products" id="products">
           <div class="products change-bg">
             <h2>Our Products</h2>
             <div class="card-container">
@@ -192,23 +216,25 @@
                     <p>In here, we have our new products that are zero chemicals for you. You can click on the link below to see all our latest products.</p>
                     </div>
                 </div>
+
+                <div class="card product-card hidden-card" id="hidden-card">
+                    <img src="/assets/p5.png" alt="">
+                    <div class="card-content">
+                    <h4>Body Sharper</h4>
+                    <p>In here, we have our new products that are zero chemicals for you. You can click on the link below to see all our latest products.</p>
+                    </div>
+              </div>
             </div>
-            <div class="card product-card hidden-card">
-                <img src="/assets/p4.png" alt="">
-                <div class="card-content">
-                <h4>Body Sharper</h4>
-                <p>In here, we have our new products that are zero chemicals for you. You can click on the link below to see all our latest products.</p>
-                </div>
-          </div>
+
 
           <div class="see-all  product-link">
-            <a href="">See All</a>
+            <a href="" id="see-all-link">See All</a>
          </div>
 
         </div>
        </section>
 
-       <section class="abt-products reviews">
+       <section class="abt-products reviews" id="reviews">
            <div class="reviews-containter">
              <h2>Reviews</h2>
 
@@ -226,7 +252,7 @@
            </div>
         </section>
 
-        <footer>
+        <footer id="footer">
             <div class="footer-content">
                 <div class="footer-nav">
                 <div class="social">
@@ -260,17 +286,17 @@
                 <div class="nav-links">
                 <ul class="footer-items ft-link">
                     <li class="f-links">
-                        <a href="#">
+                        <a href="#intro">
                             About
                         </a>
                     </li>
                     <li class="f-links">
-                        <a href="#">
+                        <a href="#services">
                             Services
                         </a>
                     </li>
                     <li class="f-links">
-                        <a href="#">
+                        <a href="#products">
                             Products
                         </a>
                     </li>
@@ -285,5 +311,7 @@
             <p class="copyrights">All rights Reserved</p>
         </footer>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

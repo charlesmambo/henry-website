@@ -10,7 +10,7 @@
 
 body{
     height: 100vh;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: relative;
     font-weight: 500;
     color: #666666;
@@ -48,9 +48,9 @@ body{
  }
 
  .nav-items li a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #000000;
-    font-weight: 600;
+    font-weight: 500;
  }
 
 
@@ -72,7 +72,60 @@ body{
  .primary-link a {
     color: #ffff;
  }
+ .drop-down-nav {
+    display: none;
+ }
 
+ .drop-down {
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    border-radius: 0.2rem;
+    position: relative;
+ }
+ .drop-down li{
+margin: 1.3rem 0;
+ }
+ 
+ .drop-down {
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    width: 300px;
+    display: none;
+}
+
+.fa-bars {
+    color: #C16F79;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.drop-btn {
+    display: block;
+    border: 2px solid  #c16f79;
+    padding: 0.7rem 2rem;
+    margin-top: 1.5rem !important;
+    border-radius: 2rem;
+    color: #C16F79 !important;
+}
+
+.drop-down li a {
+    color: #303030;
+}
+
+.fa-circle-xmark {
+    color: #ff3f3ff8;
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
 
 /* Intro SECTION  */
 header{
@@ -234,17 +287,19 @@ width: 100%;
 
 .card {
     width: 20vw;
-    height: 65vh;
+    height: 68vh;
     background-color: #ffffff28;
     border-radius: 0.3rem; 
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     overflow: hidden;
+    
 }
 
 .card-content {
     padding: 1.2rem;
     padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 .card img {
@@ -268,8 +323,18 @@ width: 100%;
 .hidden-content {
     display: flex;
     gap: 2rem;
+    opacity: 1;
+}
+
+.hide {
     display: none;
 }
+
+.service-card {
+    transition: opacity 1s ease-in-out;
+}
+
+
 
 .see-all{
     text-align: center;
@@ -299,6 +364,7 @@ h2{
     margin-top: 2rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -317,10 +383,16 @@ h2{
 
 .hidden-card {
     margin-top: 1.4rem;
-    align-self: start;
-    margin-left: 10px;
+    align-self: start !important;
     display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+.hidden-card.show {
+    display: flex;
+    opacity: 1;
+}
+
 
 .product-link  {
     margin-top: 1.2rem;
@@ -361,7 +433,7 @@ h2{
     justify-content: center;
 }
 .review-card p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #4e4e4e;
 }
 
@@ -448,10 +520,12 @@ footer {
 
 hr{
     height: 2px;
-    background-color: #BAD0A9;
+    background-color: #cbd7c2;
     border: none;
     margin-top: 1rem;
 }
+
+
 
 @media only screen and (max-width: 600px) {
    .nav-items {
@@ -597,6 +671,10 @@ h2{
     margin-top: 1.2rem;
 }
 
+.drop-down-nav{
+    display: block;
+}
+
 /* Reviews */
 .reviews-containter  {
     background-color: #d9edbc;
@@ -707,5 +785,94 @@ footer {
 }
 
 
-
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+   .intro-content {
+    text-align: center;
+   }
+   .intro-content h1{
+    font-size:2rem;
+   }
+
+   .img-box{
+    width: 8vw;
+    min-width: 70px;
+}
+.nav-items,
+.nav-btn {
+display: none;
+}
+
+.abt-content {
+    flex-direction: column;
+}
+
+.abt-info,
+.abt-img {
+    width: 70vw;
+}
+
+.abt-img{
+    margin-top: 2rem;
+}
+.card {
+    width: 35vw;
+    min-width: 550px;
+    height: auto;
+}
+
+.services-cards,
+.card-container {
+    justify-content: center;
+}
+
+.card-content{
+    padding: 1.5rem;
+}
+.card-content h4{
+    font-size: 1.5rem;
+}
+.card-content h4{
+    font-size: 1.5rem;
+}
+.card-content p{
+    font-size: 1.3rem;
+}
+.card-container,
+.reviews-cards{
+    flex-wrap: wrap;
+}
+
+.review-card{
+    width: 65vw;
+}
+.review-card p,
+.abt-info p,
+.products p,
+.intro-content p{
+   font-size: 1.3rem;
+}
+hr{
+    display: none;
+}
+.location {
+    width: 30vw;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+.footer-logo {
+    margin-left: 70px;
+}
+.drop-down-nav{
+    display: block;
+}
+.hidden-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    opacity: 1;
+}
+
+}
