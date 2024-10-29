@@ -17,6 +17,13 @@
     <title>DrHenryGinger | Embrace Your Natural Beauty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Include Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha384-1xv1Q/9uq6/6hBO7G1uW+0l2lYhF+yYytQo27/mJ+ZyGxdIjB5rQ1T9/s8C0S6tT" crossorigin="anonymous">
+
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha384-1J9E+YwD5XfBEP3ugMO1+9+TfT+jBHZF7ANwX7ayHDUs8R45L6GZJCuH1AX04ttb" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,18 +40,18 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about-us">About</a>
                 </li>
                 <li>
                     <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#reviews">Product</a>
+                    <a href="#products">Product</a>
                 </li>
             </ul>
 
             <div class="primary-link nav-btn">
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contact Us</a>
             </div>
          <div class="drop-down-nav" id="drop-down-nav">
             <i class="fa-solid fa-bars" id="hamburger"></i>
@@ -76,7 +83,7 @@
         </header>
 
        
-        <section class="abt-products">
+        <section class="abt-products" id="about-us">
          <div class="products ">
             <h2>What`s in Our Product</h2>
             <p>Our products are 100% organic and pure</p>
@@ -177,6 +184,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- end -->
          </div>
         </section>
        
@@ -256,7 +265,29 @@
         </section>
        <section class="abt-products" id="contact">
            <div class="form">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa ipsum, tempore minima sapiente reprehenderit repudiandae pariatur quod, mollitia, expedita iusto! Soluta quam laudantium quaerat odit deserunt maxime obcaecati, similique culpa exercitationem veritatis unde illo nesciunt corporis repellendus explicabo, ea quidem consectetur labore pariatur, et quis. Perspiciatis minima facilis laborum.
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.0110992600125!2d28.006578974196792!3d-26.098556359677342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574a25c5bfd87%3A0x881109f4b8e4ca0d!2sRandview%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1730226456143!5m2!1sen!2sza" width="100%" height="100%" style="border:0; border-radius: 0.4rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-control">
+                <h2>Book your beauty with us here, we are here to help.</h2>
+                <div class="form-inputs">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <div class="no">
+                        <input type="tel" name="" placeholder="Phone No">
+                        <input type="email" name="" placeholder="Email">
+                    </div>
+                    <div class="option">
+                        <div class="eg">
+                            Enquiry 
+                            <img src="/assets/arrow.svg" alt="">
+                        </div>
+                    </div>
+
+                    <textarea name="" placeholder="Message" style="height: 180px;"></textarea>
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
            </div>
         </section>
 
@@ -321,5 +352,6 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>

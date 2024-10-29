@@ -53,9 +53,9 @@ body{
 
 
  .nav-items li a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #C16F79;
-    font-weight: 500;
+    font-weight: 600;
  }
 
 
@@ -205,7 +205,7 @@ header {
 /* abt-products  */
 .abt-products {
     padding:3.3rem  3rem; 
-    background-color: #bad0a9;
+    background-color: #bad0a971 !important;
 }
 .products{
    display: flex;
@@ -297,9 +297,9 @@ border-radius: 1rem;
     margin-top: 2rem;
     padding-bottom: 2rem;
 }
-.services-container { 
-    background-color: #BAD0A9;
-}
+/* .services-container { 
+    background-color: #bad0a971 !important;
+} */
 
 .services-container h2 {
     text-align: center;
@@ -314,10 +314,14 @@ border-radius: 1rem;
     flex-wrap: wrap;
 }
 
+.hide {
+    display: none;
+}
+
 .card {
     width: 22vw;
     height: auto;
-    background-color: #ffffff28;
+    background-color: #bad0a93c !important;
     border-radius: 0.5rem; 
     overflow: hidden;
     
@@ -366,7 +370,7 @@ border-radius: 1rem;
 
 .see-all{
     text-align: center;
-    background-color: #BAD0A9;
+    background-color: #bad0a971 !important;
     padding: 1rem;
     padding-bottom: 2rem;
 }
@@ -403,7 +407,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #dff0c711;
+    background-color: #bad0a90e !important;
 }
 .product-card p{
     color: #666666;
@@ -429,8 +433,9 @@ h2{
 
 /* Reviews */
 .reviews-containter  {
-    background-color: #BAD0A9;
     padding: 3rem 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 .reviews-containter h2 {
     text-align: center;
@@ -438,13 +443,15 @@ h2{
 }
 .reviews {
     padding: 1rem 3rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .reviews-cards {
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.9rem;
 }
 
@@ -452,7 +459,7 @@ h2{
     width: 25vw;
     height: 26vh;
     text-align: center;
-    background-color: #BAD0A9;
+    background-color: #bad0a911 !important;
     padding: 1.2rem;
     border-radius: 0.3rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -478,8 +485,6 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    left: -0.4rem;
 }
 
 .date {
@@ -494,7 +499,8 @@ h2{
 
 .fa-user {
     background-color: #c16f79e6; 
-    padding: 0.6rem;  
+    padding: 0.6rem; 
+    height: 10px; 
     border-radius: 100%;
     font-size: 0.7rem;
     color: #f3b0b0;
@@ -585,16 +591,103 @@ footer {
 
 hr{
     height: 2px;
-    background-color: #BAD0A9;
+    background-color: #bad0a971 !important;
     border: none;
     margin-top: 1rem;
 }
 
 
 #contact {
-    margin: 2rem 0;
+    margin: 3rem 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-color: transparent !important;
+}
+#map{
+    width: 45vw;
+    background-color: #4e4e4e;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    width: 40vw;
+}
+
+.form-control h2 {
+    color: #c16f79;
+    text-align: center !important;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 1rem;
+}
+
+.form-inputs input,
+textarea,
+.eg {
+    background-color: #bad0a971 !important;
+}
+.form-inputs input,
+textarea,
+button,
+.eg {
+    outline: none;
+    padding: 0.8rem 0.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    background-color: #ffff;
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: #c16f79;   
+    font-size: 1rem;
+    color: #ffff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.8s ease, color 0.8s ease, border 0.8s ease;
+    width: fit-content;
+    min-width: 180px;
+    border-radius: 2rem;
+    margin-top: 0.6rem;
+}
+
+button:hover {
+    background-color: transparent;   
+    color: #c16f79;
+    border: 1.5px solid #c16f79;
+}
+
+.eg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.eg img{
+    display: block;
+    width: 20px;
+    transform: rotate(-90deg);
+}
+
+.no {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
 
 
