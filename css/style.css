@@ -453,8 +453,9 @@ h2{
 }
 
 .review-card {
-    width: 30vw;
-    height: 36vh;
+    width: 60vw; 
+    max-width: 90%; 
+    min-height: 300px; 
     text-align: center;
     background-color: #bad0a911 !important;
     padding: 1.2rem;
@@ -466,6 +467,7 @@ h2{
     flex-direction: column;
     overflow: hidden;
 }
+
 .review-card p{
     font-size: 1rem;
     color: #666666;
@@ -934,16 +936,17 @@ h2{
     padding: 1.5rem 0;
 }
 .reviews {
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .reviews-cards {
     flex-direction: column;
+    padding: 0;
 }
 
 .review-card {
-    width: 100%;
-    height: auto;
+    width: 100%; 
+    max-width: 100%; 
     box-sizing: border-box;
 }
 .review-card p{
