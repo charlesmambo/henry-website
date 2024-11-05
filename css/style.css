@@ -1106,6 +1106,7 @@ display: none;
     justify-content: space-between;
 }
 
+
 .abt-content {
     flex-direction: column;
 }
@@ -1158,8 +1159,16 @@ display: none;
 }
 
 .review-card{
-    width:100%;
+    width: 100%; 
+    max-width: 100%; 
      height: 280px;
+}
+
+.drop-down{
+    width: 50vw !important;    
+}
+.product-card{
+    width: 90vw !important;  
 }
 
 .review-card p {
